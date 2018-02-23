@@ -1,6 +1,16 @@
 As a user…
 
-I want to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike.
+I want to log a newly-admitted animal by submitting a form with:
+ 
+animal species
+name
+age
+diet
+zoo location
+number of needed caretakers
+sex
+one like
+one dislike
 
 I want to view a list of animals I have logged.
 
