@@ -1,3 +1,0 @@
-As a user…
-
-I want to click an animal to edit its name, age or caretakers.
