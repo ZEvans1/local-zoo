@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { NewAnimalComponent } from './new-animal.component';
+import { AnimalListComponent } from './animal-list.component';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   imports: [
@@ -11,7 +13,9 @@ import { NewAnimalComponent } from './new-animal.component';
   ],
   declarations: [
     AppComponent,
-    NewAnimalComponent
+    AnimalListComponent,
+    NewAnimalComponent,
+    AgePipe
   ],
   bootstrap: [
     AppComponent

@@ -6,6 +6,7 @@ import { Animal } from './animal.model';
   template: `
   <div class="container">
     <h1>Local Zoo</h1>
+    <animal-list [childAnimalList]="masterAnimalList"></animal-list>
     <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
 

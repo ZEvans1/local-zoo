@@ -26,7 +26,7 @@ import { Animal } from './animal.model';
     <input #newDislikes>
   </div>
   <br>
-  <button class="animal form btn btn-outline-secondary" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCareTakerNumber.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value='', newName.value='', newAge.value='', newDiet.value='', newZooLocation.value='', newCareTakerNumber.value='', newSex.value='', newLikes.value='', newDislikes.value='';"></button>  
+  <button class="animal form btn btn-outline-secondary" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCareTakerNumber.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newZooLocation.value=''; newCareTakerNumber.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';"></button>  
   `
 })
 
