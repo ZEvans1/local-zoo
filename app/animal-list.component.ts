@@ -14,7 +14,7 @@ import { Animal } from './animal.model';
 
   <div class="animal-list">
     <ul>
-      <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.species}}<br>{{currentAnimal.name}}<br>{{currentAnimal.age}}<br>{{currentAnimal.diet}}<br>{{currentAnimal.zooLocation}}<br>{{currentAnimal.careTakerNumber}}<br>{{currentAnimal.sex}}<br>{{currcurrentAnimal.likes}}<br>{{currentAnimal.dislikes}}</li>
+      <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.species}}<br>{{currentAnimal.name}}<br>{{currentAnimal.age}}<br>{{currentAnimal.diet}}<br>{{currentAnimal.zooLocation}}<br>{{currentAnimal.careTakerNumber}}<br>{{currentAnimal.sex}}<br>{{currentAnimal.likes}}<br>{{currentAnimal.dislikes}}</li>
     </ul>
   </div>
   `
