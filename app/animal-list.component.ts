@@ -4,17 +4,19 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-  <div class="animal-form">
+  <div>
     <select (change)="onChange($event.target.value)">
       <option value="allAnimals" selected="selected">All Animals</option>
-      <option value="young">Young Aniamls</option>
+      <option value="young">Young Animals</option>
       <option value="mature">Mature Animals</option>
     </select>
   </div>
 
-  <div class="animal-list">
+  <div>
     <ul>
-      <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.species}}<br>{{currentAnimal.name}}<br>{{currentAnimal.age}}<br>{{currentAnimal.diet}}<br>{{currentAnimal.zooLocation}}<br>{{currentAnimal.careTakerNumber}}<br>{{currentAnimal.sex}}<br>{{currentAnimal.likes}}<br>{{currentAnimal.dislikes}}</li>
+      <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">Species: {{currentAnimal.species}}<br>Name: {{currentAnimal.name}}<br>Age: {{currentAnimal.age}}<br>Diet: {{currentAnimal.diet}}<br>Location: {{currentAnimal.zooLocation}}<br>Number of Caretakers: {{currentAnimal.careTakerNumber}}<br>Sex: {{currentAnimal.sex}}<br>Likes: {{currentAnimal.likes}}<br>Dislikes: {{currentAnimal.dislikes}}<br>
+      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
+      </li>
     </ul>
   </div>
   `
@@ -28,5 +30,9 @@ export class AnimalListComponent {
 
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
+  }
+
+  editButtonHasBeenClicked(animalToEdit: Animal) {
+    this.clickSender.emit(animalToEdit);
   }
 }

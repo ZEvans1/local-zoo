@@ -8,25 +8,34 @@ import { Animal } from './animal.model';
   <div class="animal-form">
     <label>Animal Species</label>
     <input #newSpecies>
-    <label>Animal Name</label>
+    <br>
+    <label>Name</label>
     <input #newName>
-    <label>Animal Age</label>
+    <br>
+    <label>Age</label>
     <input #newAge>
-    <label>Animal Diet</label>
+    <br>
+    <label>Diet</label>
     <input #newDiet>
-    <label>Animal Location</label>
+    <br>
+    <label>Location</label>
     <input #newZooLocation>
+    <br>
     <label>Number of Caretakers</label>
     <input #newCareTakerNumber>
-    <label>Animal Sex</label>
+    <br>
+    <label>Sex</label>
     <input #newSex>
-    <label>Animal Likes</label>
+    <br>
+    <label>Likes</label>
     <input #newLikes>
-    <label>Animal Dislikes</label>
+    <br>
+    <label>Dislikes</label>
     <input #newDislikes>
+    <br>
   </div>
   <br>
-  <button class="animal form btn btn-outline-secondary" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCareTakerNumber.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newZooLocation.value=''; newCareTakerNumber.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';"></button>  
+  <button class="animal-form btn btn-outline-secondary" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCareTakerNumber.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newZooLocation.value=''; newCareTakerNumber.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add Animal</button>
   `
 })
 
