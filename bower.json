@@ -1,0 +1,23 @@
+{
+  "name": "local-zoo",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  },
+  "resolutions": {
+    "bootstrap": "3.3.7"
+  },
+  "authors": [
+    "ZEvans1 <zte.zachary@gmail.com>"
+  ]
+}
