@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-  <div>
+  <div class="animal-form">
     <select (change)="onChange($event.target.value)">
       <option value="allAnimals" selected="selected">All Animals</option>
       <option value="young">Young Animals</option>
@@ -12,10 +12,10 @@ import { Animal } from './animal.model';
     </select>
   </div>
 
-  <div>
+  <div class="animal-list">
     <ul>
       <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">Species: {{currentAnimal.species}}<br>Name: {{currentAnimal.name}}<br>Age: {{currentAnimal.age}}<br>Diet: {{currentAnimal.diet}}<br>Location: {{currentAnimal.zooLocation}}<br>Number of Caretakers: {{currentAnimal.careTakerNumber}}<br>Sex: {{currentAnimal.sex}}<br>Likes: {{currentAnimal.likes}}<br>Dislikes: {{currentAnimal.dislikes}}<br>
-      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
+      <button class="btn btn-outline-secondary" (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal</button>
       </li>
     </ul>
   </div>

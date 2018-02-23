@@ -1,16 +1,3 @@
 As a user…
 
 I want to click an animal to edit its name, age or caretakers.
-
-<h4>{{childSelectedAnimal.name}}</h4>
-
-<br>
-<label>Edit Age</label>
-<input [(ngModel)]="childSelectedAnimal.age">
-<br>
-<label>Edit Caretaker Number</label>
-<input [(ngModel)]="childSelectedAnimal.careTakerNumber">
-<br>
-
-
-class="btn btn-outline-secondary"
