@@ -4,15 +4,15 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'new-animal',
   template: `
-  <h2>Add an animal to the list</h2>
-  <div class="animal-form">
+  <h2>Add an animal to the list here: </h2>
+  <div class="animal-form form-control">
     <label>Animal Species</label>
     <input #newSpecies>
     <br>
     <label>Name</label>
     <input #newName>
     <br>
-    <label>Age</label>
+    <label>Age (years)</label>
     <input #newAge>
     <br>
     <label>Diet</label>
@@ -33,9 +33,9 @@ import { Animal } from './animal.model';
     <label>Dislikes</label>
     <input #newDislikes>
     <br>
+    <button class="btn btn-outline-secondary" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCareTakerNumber.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newZooLocation.value=''; newCareTakerNumber.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add Animal</button>
   </div>
   <br>
-  <button class="animal-form btn btn-outline-secondary" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newZooLocation.value, newCareTakerNumber.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newZooLocation.value=''; newCareTakerNumber.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add Animal</button>
   `
 })
 

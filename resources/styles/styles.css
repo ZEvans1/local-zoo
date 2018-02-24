@@ -8,6 +8,7 @@ h2 {
 
 .animal-form {
   text-align: center;
+  background-color: #b3ffa8;
 }
 
 .animal-list {
@@ -15,5 +16,14 @@ h2 {
 }
 
 .edit-form {
+  text-align: center;
+  background-color: #b3ffa8;
+}
+
+.border {
+  border-style: solid black;
+}
+
+.age-select {
   text-align: center;
 }

@@ -1,4 +1,4 @@
-# _Age Calculator_
+# _Local Zoo_
 
 #### _A page for keeping track of animals at a zoo for JavaScript week 3 @ Epicodus, Feb. 23, 2018_
 
@@ -10,7 +10,8 @@ _This is an HTML page that uses JavaScript and Angular to keep track of animals 
 
 ## Future Work
 
-* _Convert decimal results to months and days._
+* _Add a map that displays where the animal is located in the zoo._
+* _Add a birthday feature (with the addition of a database). On an animal's birthday it will get a special style applied to it. Perhaps there could be a 1-2 week warning so the caretakers could prepare an event for it at the zoo if the animal was popular._
 
 
 ## Setup/Installation Requirements
